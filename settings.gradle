@@ -1,0 +1,18 @@
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    maven {
+      allowInsecureProtocol = true
+      url "http://maven.qima-inc.com/content/repositories/releases/"
+    }
+    maven {
+      allowInsecureProtocol = true
+      url "http://maven.qima-inc.com/content/repositories/snapshots"
+    }
+    google()
+    mavenCentral()
+    jcenter() // Warning: this repository is going to shut down soon
+  }
+}
+rootProject.name = "TestDemo"
+include ':app'
